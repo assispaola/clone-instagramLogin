@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200&display=swap');
+
+:root {
+  --input-error: red;
+  --button-disabled: #acacac;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #ededee;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding-right: 3rem;
+}
+
+.instagram-phone img {
+  width: 40rem;
+}
+
+.instagram-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+}
+
+.box-login {
+  background: #FFFFFF;
+  box-shadow: 0px 21.0037px 31.5056px rgba(147, 153, 176, 0.15);
+  border-radius: 12.6022px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  min-height: 36rem;
+  width: 70%;
+  padding: 20px;
+}
+
+.instagram-logo {
+  width: 11.25rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.inputs-login {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-login input {
+  background: #ededee;
+  border-radius: 6.30112px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #5A686C;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid #5a686c2c;
+}
+
+.btn-login {
+  background: linear-gradient(269.53deg, #A336BD -4.74%, #FF387D 29.23%, #FF5D34 70.94%, #FFAA1B 105.94%);
+  border-radius: 6.30112px;
+  border: none;
+  padding: 10px;
+  color: #FFF;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-login:hover {
+  background: linear-gradient(269.53deg, #722685 -4.74%, #ca2b63 29.23%, #c74929 70.94%, #ba7d15 105.94%);
+}
+
+hr {
+  border: 1px solid #EBEBEB;
+}
+
+.btn-facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6.30112px;
+  border: 1.2px solid rgba(24, 119, 242, 1);
+  background-color: transparent;
+  padding: 10px;
+  color: #1877F2;
+  cursor: pointer;
+}
+
+.btn-facebook:hover {
+  font-weight: 500;
+  background-color: #1876f219;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  color: #5A686C;
+}
+
+.forgot-password a:hover {
+  color: #1877F2;
+  text-decoration: underline;
+}
+
+.line-small {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.signup {
+  color: #1877F2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.signup a {
+  color: #1877F2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.get-app {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #5A686C;
+}
+
+.buttons-apiLogin img {
+  width: 180px;
+  padding: 0 10px;
+}
+
+/* Javascript */
+.error {
+  border: 1px solid var(--input-error) !important;
+}
+
+.btn-login:disabled {
+  background-color: var(--button-disabled) !important;
+  cursor: not-allowed;
+}
+
+.btn-login:hover:disabled {
+  background-color: var(--button-disabled) !important;
+  cursor: not-allowed;
+}
+
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 80%;
+  }
+
+  .instagram-phone {
+    width: 35%;
+  }
+
+  .instagram-phone img {
+    width: 35rem;
+  }
+
+  .instagram-login {
+    width: 75%;
+    align-items: end;
+  }
+
+  .buttons-apiLogin img {
+    width: 120px;
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-login {
+    width: 100%;
+    align-items: center !important;
+  }
+
+  .box-login {
+    width: 80%;
+  }
+
+  .buttons-apiLogin img {
+    width: 180px;
+    padding: 5px;
+  }
+}
